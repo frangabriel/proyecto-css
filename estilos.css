@@ -1,0 +1,196 @@
+@font-face {
+font-family: 'DancingScript-Bold';
+ src: url('DancingScript-Bold.ttf');
+}
+html{
+   background-color:  #02010a;
+}
+body{
+   font-family: DancingScript-Bold;
+   margin: 0 auto;
+   width: 900px;
+}
+header{
+   border-radius: 10px 10px 0 0;
+   background-color: #5b7989;
+   padding: 15px 0;
+   display: flex;
+   flex-flow: row wrap;
+   width: 100%;
+   min-height: 20px;
+   animation: omega 2s;
+}
+footer{
+   display: flex;
+   flex-flow: row wrap;
+   background-color: #C6d5c5;
+   padding-left: 10px;
+   border-radius: 0 0 10px 10px;
+
+}
+.contacto, .terminos, .redes, .derechos{
+   width: 25%;
+   font-size: 1em;
+
+}
+.contenedor{
+   background-color: #82c3a6;
+   text-align: center;
+}
+.contenedor1{
+   display: flex;
+   flex-flow: row wrap;
+   text-align: center;
+   background-color: #d5c75f;
+}
+.paisaje, .retrato{
+   font-size: 1.5em;
+   width: 50%;
+}
+.paisaje a{
+   color: black;
+}
+.paisaje img{
+   transition-property: border;
+   transition-duration: 2s;
+}
+.paisaje img:hover{
+   border: 2px solid black;
+   box-shadow: 2px 2px #82c3a6;
+   animation: alfa 2s;
+}
+@keyframes alfa{
+to{transform: rotate(10deg);}
+}
+.retrato a{
+   color: black;
+}.retrato img:hover{
+   border: 2px solid black;
+   box-shadow: 2px 2px #82c3a6;
+   animation: beta 2s;
+}
+@keyframes beta {
+   to{
+      transform: translate(20px, -5px);
+   }
+}
+@keyframes omega{
+    0%{margin-top: 150%;}
+    60%{margin-top: 5%;}
+    100%{margin-top: 0%;}
+
+}
+
+img{
+   box-shadow: 2px 2px black;
+}
+
+.img1{
+width: 50%;
+padding: 0;
+margin: 20px;
+}
+.img2{
+   padding: 0;
+   margin : 20px;
+   width: 70%;
+}
+.img3{
+   padding: 0px;
+   margin: 20px;
+   width: 55%;
+}
+
+
+.c1{
+
+   text-indent: 15px;
+   width: 60%;
+}
+.c1 h1{
+color: white;
+text-shadow: 2px 2px #02010a;
+font-size: 1.5em;
+}
+.c2{
+   font-size: 18px;
+   width:40%;
+   padding-top: 30px;
+}
+.c2 a{
+   color: white;
+
+}
+.inicio{
+   text-decoration: none;
+}
+.c2 nav{
+   padding-left: 40%;
+   word-spacing: 10px;
+}
+.fa, .ig, .tw, .co{
+   box-shadow: none;
+   width: 10%;
+}
+.contenedor2{
+   display: flex;
+   flex-flow: row wrap;
+   background-color:  #d5c75f;
+   text-align: center;
+}
+.pa1,.pa2,.pa3,.pa4,.pa5,.pa6{
+   width: 90%;
+   margin: 10px;
+}
+.re1,.re2,.re3,.re4,.re5,.re6{
+   width: 80%;
+   margin: 10px;
+}
+.p1,.p2,.p3,.p4,.p5,.p6,.r1,.r2,.r3,.r4,.r5,.r6{
+   width: 33.33%;
+}
+.contenedor3{
+   display: flex;
+   flex-flow: row wrap;
+   background-color:  #d5c75f;
+   text-align: center;
+}
+.pa1,.re1{
+-webkit-filter: blur(10px);
+}
+.pa2,.pa4,.pa6,.re2,.re4,.re6{
+   -webkit-filter: grayscale(100%);
+}
+.pa3,.re3{
+   -webkit-filter: sepia(90%);
+}
+@media (max-width:900px){
+   body{
+      width: 100%;
+   }
+   header{
+      text-align: center;
+   }
+   .c1{
+      width: 100%;
+   }
+   .c2{
+      font-size: 1em;
+      width:100%;
+      padding-top: 10px;
+   }
+   .c2 nav{
+      text-align: center;
+      padding-left: 0;
+   }
+   .paisaje, .retrato{
+      width: 100%;
+   }
+   .contacto, .terminos, .redes, .derechos{
+      width: 100%;
+   }
+   .p1,.p2,.p3,.p4,.p5,.p6,.r1,.r2,.r3,.r4,.r5,.r6{
+   width: 100%;
+   }
+
+}
